@@ -1,12 +1,10 @@
 <template>
-  <div class="w-6/6 md:w-5/6 text-justify container">
+  <div class="w-screen text-justify container">
     <div
       class="
-        h-5/6
-        max-h-80vh
-        bg-primary
+        max-h-full
         overflow-x-hidden
-        my-12
+        top-0
         scrollbar scrollbar-thumb-gray-300 scrollbar-track-gray-100
       "
     >
@@ -15,9 +13,8 @@
           sticky
           top-0
           h-20
-          bg-blue-500
-          rounded
-          flex flex-wrap
+          bg-primary
+          flex-wrap
           content-center
           justify-center
           font-bold
@@ -25,6 +22,9 @@
           md:text-lg
           flex flex-col
           md:flex-row
+          shadow-md
+          px-8
+          border-primary border
         "
       >
         <font-awesome-icon
@@ -33,31 +33,51 @@
         />
         <p>TÉRMINOS Y CONDICIONES</p>
       </div>
-      <ul class="list-disc list-inside text-justify pt-12 px-10">
-        <li>
+      <ul class="text-justify py-12 px-10 list-inside">
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary animate-bounce"
+          />
           A LA INFORMACIÓN REGISTRADA POR USTED EN EL SISTEMA, LA FISCALÍA
           GENERAL DE LA NACIÓN LE DARÁ TRATAMIENTO SEGÚN LO ESTABLECIDO EN LA
           LEY DE PROTECCIÓN DE DATOS PERSONALES (LEY 1581 DE 2012).
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           LOS SERVICIOS QUE BRINDA LA FISCALÍA GENERAL DE LA NACIÓN SON
           GRATUITOS. PARA PRESENTAR UNA DENUNCIA NO SE REQUIERE LA ASISTENCIA DE
           ABOGADO.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           EXONERACIÓN DEL DEBER DE DENUNCIAR: NADIE ESTÁ OBLIGADO A FORMULAR
           DENUNCIA CONTRA SÍ MISMO, CONTRA SU CÓNYUGE, COMPAÑERO O COMPAÑERA
           PERMANENTE O CONTRA SUS PARIENTES DENTRO DEL CUARTO GRADO DE
           CONSANGUINIDAD O CIVIL, O SEGUNDO DE AFINIDAD, NI A DENUNCIAR CUANDO
           MEDIE EL SECRETO PROFESIONAL. (ART. 68, LEY 906 DE 2004).
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           RECUERDE QUE AL PRESENTAR UNA DENUNCIA, USTED SE ENCUENTRA BAJO LA
           GRAVEDAD DE JURAMENTO. EN CASO DE FALTAR A LA VERDAD, PODRÍA INCURRIR
           EN LA COMISIÓN DE LA CONDUCTA TIPIFICADA EN EL ART. 69, LEY 906 DE
           2004.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           AL DAR CLICK EN EL BOTÓN SIGUIENTE PASO, USTED DECLARA QUE ACEPTA Y
           ENTIENDE LA INFORMACIÓN AQUÍ EXPUESTA.
         </li>
@@ -68,9 +88,8 @@
           sticky
           top-0
           h-20
-          bg-blue-500
-          rounded
-          flex flex-wrap
+          bg-primary
+          flex-wrap
           content-center
           justify-center
           font-bold
@@ -78,6 +97,7 @@
           md:text-lg
           flex flex-col
           md:flex-row
+          px-8
         "
       >
         <font-awesome-icon
@@ -86,25 +106,45 @@
         />
         <p>¿QUÉ DEBE TENER EN CUENTA PARA USAR EL SISTEMA?</p>
       </div>
-      <ul class="list-disc list-inside text-justify pt-12 px-10">
-        <li>
+      <ul class="list-inside text-justify py-12 px-10">
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           REGISTRE TODA LA INFORMACIÓN REQUERIDA. LOS CAMPOS RESALTADOS EN COLOR
           ROJO Y/O CON ASTERISCO (*) SON OBLIGATORIOS.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           PARA DESPLAZARSE ENTRE LAS PANTALLAS UTILICE LOS BOTONES SIGUIENTE
           PASO Y PASO ANTERIOR.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           EN CASO QUE LO REQUIERA, SELECCIONE EL BOTÓN AYUDA (?) UBICADO EN LA
           PARTE SUPERIOR DERECHA DE LA PANTALLA.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           EN LOS CAMPOS CON LISTAS DESPLEGABLES, USTED PODRÁ ESCRIBIR LAS
           PRIMERAS LETRAS DE LA PALABRA QUE ESTÁ BUSCANDO, PARA QUE EL SISTEMA
           MUESTRE LAS OPCIONES QUE COINCIDEN CON SU BÚSQUEDA.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           ANTES DE DAR CLIC EN EL BOTÓN FINALIZAR REVISE EL RESUMEN, EL CUAL
           CONTIENE TODA LA INFORMACIÓN REGISTRADA POR USTED. PARA REALIZAR
           ALGUNA MODIFICACIÓN, REGRESE HASTA LA SECCIÓN CORRESPONDIENTE
@@ -116,9 +156,8 @@
           sticky
           top-0
           h-20
-          bg-blue-500
-          rounded
-          flex flex-wrap
+          bg-primary
+          flex-wrap
           content-center
           justify-center
           font-bold
@@ -126,6 +165,7 @@
           md:text-lg
           flex flex-col
           md:flex-row
+          px-8
         "
       >
         <font-awesome-icon
@@ -134,14 +174,22 @@
         />
         <p>¿QUÉ PASA DESPUÉS DE FINALIZAR EL REGISTRO DE LA INFORMACIÓN?</p>
       </div>
-      <ul class="list-disc list-inside text-justify pt-12 px-10">
-        <li>
+      <ul class="list-inside text-justify py-12 px-10">
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           UNA VEZ SE DA CLIC EN EL BOTÓN FINALIZAR, EL SISTEMA CREARÁ LA NOTICIA
           CRIMINAL Y LE ASIGNARÁ UN NÚMERO ÚNICO DE 21 DÍGITOS, EL CUAL SERÁ
           NOTIFICADO AL CORREO ELECTRÓNICO QUE USTED SUMINISTRÓ. ASÍ MISMO,
           USTED PODRÁ DESCARGAR COPIA DE SU DENUNCIA EN FORMATO PDF.
         </li>
-        <li>
+        <li class="pt-8">
+          <font-awesome-icon
+            :icon="['far', 'check-circle']"
+            class="text-base mr-2 self-center text-primary"
+          />
           CON EL NÚMERO ÚNICO DE NOTICIA CRIMINAL, USTED PODRÁ CONSULTAR EL
           ESTADO DE SU DENUNCIA (ACTIVO O INACTIVO) Y LOS DATOS DE CONTACTO DEL
           FISCAL ASIGNADO A SU CASO, LLAMANDO A LA LÍNEA 122 O INGRESANDO A LA
@@ -149,6 +197,7 @@
         </li>
       </ul>
     </div>
+    <NuxtLink to="/user">Empezar</NuxtLink>
     <div>
       <!-- <Logo /> -->
       <!-- <h1 class="title">responsive-contact-center</h1> -->
@@ -186,14 +235,14 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
+/* .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+} */
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,

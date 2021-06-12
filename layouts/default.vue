@@ -1,6 +1,35 @@
 <template>
   <div>
-    <Nuxt />
+    <div
+      class="
+        bg-primary
+        h-20
+        fixed
+        w-screen
+        z-50
+        shadow-md
+        flex flex-row
+        justify-between
+        font-bold
+        text-white text-sm
+        md:text-lg
+        items-center
+        px-4
+      "
+    >
+      <div class="w-36 rounded">
+        <img
+          class="object-scale-down w-full rounded"
+          src="~/assets/images/logoFiscalia.jpg"
+          alt="Logo Fiscalia"
+        />
+      </div>
+      <!-- <img src="~/assets/images/logoFiscalia.jpg" alt="Logo Fiscalia" /> -->
+      <p class="">Centro de Contacto</p>
+    </div>
+    <div class="pt-20">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
