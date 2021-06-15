@@ -31,7 +31,7 @@ module.exports = {
         primary: '#08539f',
         secondary: '#fcc50e',
         error: '#e41e29',
-
+        pastel: '#e6edf5'
       }
     }
   },

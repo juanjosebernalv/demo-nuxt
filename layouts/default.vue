@@ -25,10 +25,13 @@
         />
       </div>
       <!-- <img src="~/assets/images/logoFiscalia.jpg" alt="Logo Fiscalia" /> -->
-      <p class="">Centro de Contacto</p>
+      <p class="pr-0 md:pr-10">Centro de Contacto</p>
     </div>
     <div class="pt-20">
       <Nuxt />
+    </div>
+    <div class="bg-primary mt-16 w-full h-20 flex items-center justify-center">
+      <p class="text-white text-lg font-semibold">Fiscalía 2021</p>
     </div>
   </div>
 </template>
@@ -57,32 +60,61 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+@tailwind base;
+
+/* Here we can add any custom overrides */
+
+.field {
+  @apply border py-2 px-3 text-primary border-primary rounded focus:outline-none focus:ring focus:border-blue-300;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.field-label {
+  @apply uppercase font-bold text-lg text-primary mb-2;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+.field-group {
+  @apply flex flex-col;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+/* .btn {
+  @apply block text-white uppercase text-lg p-4 rounded;
+}
+
+.btn-teal {
+  @apply bg-gray-800;
+}
+
+.btn-teal:hover {
+  @apply bg-yellow-800;
+} */
+
+.link {
+  @apply block no-underline text-sm;
+}
+
+.link-grey {
+  @apply text-red-800;
+}
+
+.link-grey:hover {
+  @apply text-red-500;
+}
+
+.btn {
+  @apply flex align-middle;
+}
+.btn-blue {
+  @apply font-bold rounded-md text-sm text-primary;
+  @apply bg-primary text-white h-12 px-4;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+.btn-rounded-blue {
+  @apply font-bold rounded-md text-sm text-primary;
+  @apply bg-white text-primary border border-primary h-12 px-4;
+}
+.btn-rounded-blue:hover {
+  @apply bg-blue-700 text-white;
 }
 </style>
