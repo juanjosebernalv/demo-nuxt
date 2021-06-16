@@ -40,9 +40,9 @@ export default {
       default: '',
     },
     icon: {
-      type: String,
+      type: Array,
       required: true,
-      default: '',
+      default: () => [],
     },
   },
 }

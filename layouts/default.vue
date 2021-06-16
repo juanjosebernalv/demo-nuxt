@@ -65,11 +65,11 @@ html {
 /* Here we can add any custom overrides */
 
 .field {
-  @apply border py-2 px-3 text-primary border-primary rounded focus:outline-none focus:ring focus:border-blue-300;
+  @apply border w-full md:w-11/12 py-2 px-3 text-primary border-primary rounded focus:outline-none focus:ring focus:border-blue-300;
 }
 
 .field-label {
-  @apply uppercase font-bold text-lg text-primary mb-2;
+  @apply uppercase font-bold text-xs text-primary mb-2 overflow-ellipsis overflow-hidden;
 }
 
 .field-group {

@@ -1,0 +1,2281 @@
+export const config = {
+	"data": null,
+	"title": null,
+	"actualStep": 7,
+	"service": null,
+	"typeOfModal": null,
+	"steps": "-7",
+	"showModal": false,
+	"nextForm": {
+		"stepIndex": 1,
+		"stepODM": 11,
+		"operationIndex": 1,
+		"filter": null,
+		"showCheckboxDialog": null,
+		"criminalNews": {
+			"sigturno": "",
+			"app": "SUIP",
+			"appProcess": "RECORD_COMPLAINT_CITIZEN",
+			"indexOfDenouncer": 0,
+			"navigatorVersion": "Chrome 91",
+			"_coprId": 79064882,
+			"classData": "CRIMINAL_NEWS_TEMP",
+			"_id": "754c444c29c0a049e1a536a7603cf62b",
+			"consecutive": 28,
+			"goods": [],
+			"crimes": [],
+			"steps": [
+				{
+					"fromStep": "0",
+					"destinationStep": 2,
+					"operationIndex": 1
+				},
+				{
+					"fromStep": "2",
+					"destinationStep": 5,
+					"operationIndex": 1
+				},
+				{
+					"fromStep": "5",
+					"destinationStep": 11,
+					"operationIndex": 1
+				},
+				{
+					"fromStep": "11",
+					"destinationStep": 7,
+					"operationIndex": 2
+				}
+			],
+			"factDetails": {
+				"receiverUser": {
+					"username": "RECEPTOR_VIRTUAL",
+					"firstName": "RECEPTOR",
+					"firstSurname": "CIUDADANO",
+					"secondSurname": "VIRTUAL",
+					"email": null,
+					"identity": "-1",
+					"spoaUsername": "RECEPTOR_VIRTUAL"
+				},
+				"receiverUnit": {
+					"company": {
+						"name": "Fiscalía General de la Nación",
+						"id": "60"
+					},
+					"branch": {
+						"name": "UNIDAD RECEPTORA VIRTUAL",
+						"id": "UNRE_ID_60_99999",
+						"parentId": "MUNI_ID_140_11_1"
+					},
+					"estate": {
+						"id": "DEPT_ID_140_11",
+						"name": "BOGOTÁ, D. C.",
+						"parentId": "PAIS_ID_140"
+					},
+					"city": {
+						"name": "BOGOTÁ, D.C.",
+						"id": "MUNI_ID_140_11_1",
+						"parentId": "DEPT_ID_140_11"
+					},
+					"country": {
+						"name": "Colombia",
+						"id": "PAIS_ID_140"
+					},
+					"spoaUsername": "RECEPTOR_VIRTUAL"
+				},
+				"consecutiveNumber": "",
+				"radNumber": "",
+				"typeOfCriminalNews": "CREATE_NEWC_PUBLIC",
+				"hasABC": false,
+				"index": [
+					{
+						"icon": "person",
+						"title": "Denunciante",
+						"step": 7,
+						"order": 200,
+						"isActual": true
+					}
+				],
+				"abcs": [
+					{
+						"jsonField": "help",
+						"dataType": "string",
+						"jsonObject": "factDetails",
+						"dependentJsonFeature": null,
+						"label": "Importante:",
+						"GROUP_order": 1,
+						"GROUP_label": "Lea cuidadosamente la siguiente información",
+						"order": 2,
+						"catalogId": "CITIZEN_HELP",
+						"step": 2
+					},
+					{
+						"jsonField": "warning",
+						"dataType": "string",
+						"jsonObject": "factDetails",
+						"dependentJsonFeature": null,
+						"label": "Advertencia",
+						"GROUP_order": 1,
+						"GROUP_label": "Advertencia",
+						"order": 1,
+						"catalogId": "CITIZEN_WARNING",
+						"step": 5
+					},
+					{
+						"jsonField": "identityType",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Tipo de documento",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 1,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "identity",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Número de documento",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 2,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionDateDay",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Día de expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 3,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionDateMonth",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Mes de expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 4,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionDateYear",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Año de expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 5,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionCountry",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "País expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 6,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionEstate",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "expeditionCountry",
+						"label": "Departamento expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 7,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionCity",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "expeditionEstate",
+						"label": "Ciudad expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 8,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "companyName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Razón social",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 7,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "firstName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Primer nombre",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 7,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "secondName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Segundo nombre",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 8,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "firstSurname",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Primer apellido",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 9,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "secondSurname",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Segundo apellido",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 10,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthCountry",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "País nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 15,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthEstate",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "birthCountry",
+						"label": "Departamento nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 16,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthEstateName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Ciudad de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 17,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthCity",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "birthEstate",
+						"label": "Ciudad de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 18,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthdateDay",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Día de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 19,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthdateMonth",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Mes de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 20,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthdateYear",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Año de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 21,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "age",
+						"dataType": "number",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Edad",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 22,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "sex",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Sexo",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 23,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "typeAddress",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Tipo de dirección",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 19,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalAddress",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Dirección ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 20,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalAddressComplement",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Complemento dirección ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 21,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalCountry",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "País ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 22,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalEstate",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "postalCountry",
+						"label": "Departamento",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 23,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalEstateName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Ciudad de correspondencia",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 23,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalCity",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "postalEstate",
+						"label": "Ciudad ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 24,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "mobile",
+						"dataType": "number",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Teléfono celular",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 26,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "phone",
+						"dataType": "number",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Teléfono fijo",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 27,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "email",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Correo electrónico",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 28,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "emailConfirm",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Confirmación correo electrónico",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 29,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "contactMedia",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "¿Por qué medio desea ser contactado?",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 30,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "historicalCases",
+						"dataType": "tableSimple",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Histórico de casos",
+						"GROUP_order": 50,
+						"GROUP_label": "Otras denuncias",
+						"order": 100,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					}
+				],
+				"initialDate": "",
+				"finalDate": "",
+				"abcTypeValue": [],
+				"recCitViolenceKind": [],
+				"kindRelationship": [],
+				"idCase": 1623806086812,
+				"idReference": "CIUDADANO",
+				"hasRegistryError": true,
+				"hasDateError": false,
+				"hasDateBirthdateError": false,
+				"catalogId": "PersonTypeCA20"
+			},
+			"relationships": [],
+			"personType": "PersonTypeCA20",
+			"persons": [
+				{
+					"intervenerType": {
+						"id": "PersonTypeCA20",
+						"name": "DENUNCIANTE"
+					},
+					"disabilities": [],
+					"personId": "PERSON_0",
+					"abc": [],
+					"identityType": {
+						"name": "CEDULA DE CIUDADANIA",
+						"id": "DocumentTypes8",
+						"parentid": null,
+						"deep": 1,
+						"listName": "DocumentTypesCitizen1"
+					},
+					"identity": "234234324",
+					"expeditionDateDay": {
+						"name": "1",
+						"id": "1",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Days"
+					},
+					"expeditionDateMonth": {
+						"name": "Febrero",
+						"id": "2",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Months"
+					},
+					"expeditionDateYear": {
+						"name": "2019",
+						"id": "2019",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Years"
+					},
+					"expeditionCountry": {
+						"name": "COLOMBIA",
+						"id": "PAIS_ID_140",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Location"
+					},
+					"expeditionEstate": {
+						"name": "BOGOTÁ, D. C.",
+						"id": "DEPT_ID_140_11",
+						"parentid": "PAIS_ID_140",
+						"deep": 2,
+						"listName": "Location"
+					},
+					"expeditionCity": {
+						"name": "BOGOTÁ, D.C.",
+						"id": "MUNI_ID_140_11_1",
+						"parentid": "DEPT_ID_140_11",
+						"deep": 3,
+						"listName": "Location"
+					},
+					"companyName": null,
+					"firstName": "LANDO",
+					"secondName": "LANDA",
+					"firstSurname": "CARRISIAN",
+					"secondSurname": "RESTREPO",
+					"birthCountry": {
+						"name": "COLOMBIA",
+						"id": "PAIS_ID_140",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Location"
+					},
+					"birthEstate": {
+						"name": "AMAZONAS",
+						"id": "DEPT_ID_140_91",
+						"parentid": "PAIS_ID_140",
+						"deep": 2,
+						"listName": "Location"
+					},
+					"birthEstateName": null,
+					"birthCity": {
+						"name": "EL ENCANTO",
+						"id": "MUNI_ID_140_91_263",
+						"parentid": "DEPT_ID_140_91",
+						"deep": 3,
+						"listName": "Location"
+					},
+					"birthdateDay": {
+						"name": "3",
+						"id": "3",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Days"
+					},
+					"birthdateMonth": {
+						"name": "Junio",
+						"id": "6",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Months"
+					},
+					"birthdateYear": {
+						"name": "1997",
+						"id": "1997",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Years"
+					},
+					"age": 24,
+					"sex": {
+						"name": "HOMBRE",
+						"id": "SexM",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Sex"
+					},
+					"typeAddress": {
+						"name": "Laboral",
+						"id": "L",
+						"parentid": null,
+						"deep": 1,
+						"listName": "TypeLocationList"
+					},
+					"postalAddress": "ASDASDASDAS",
+					"postalAddressComplement": "TORRE 1",
+					"postalCountry": {
+						"name": "COLOMBIA",
+						"id": "PAIS_ID_140",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Location"
+					},
+					"postalEstate": {
+						"name": "BOGOTÁ, D. C.",
+						"id": "DEPT_ID_140_11",
+						"parentid": "PAIS_ID_140",
+						"deep": 2,
+						"listName": "Location"
+					},
+					"postalEstateName": null,
+					"postalCity": {
+						"name": "BOGOTÁ, D.C.",
+						"id": "MUNI_ID_140_11_1",
+						"parentid": "DEPT_ID_140_11",
+						"deep": 3,
+						"listName": "Location"
+					},
+					"mobile": "324234234324",
+					"phone": "43434",
+					"email": "PRUEBA@GMAIL.COM",
+					"emailConfirm": "PRUEBA@GMAIL.COM",
+					"contactMedia": {
+						"name": "Correo electrónico",
+						"id": "ContactMedia2",
+						"parentid": null,
+						"deep": 1,
+						"listName": "ContactMedia"
+					},
+					"historicalCases": null,
+					"abcs": [
+						{
+							"jsonField": "identityType",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Tipo de documento",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 1,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "identity",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Número de documento",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 2,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionDateDay",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Día de expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 3,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionDateMonth",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Mes de expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 4,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionDateYear",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Año de expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 5,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionCountry",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "País expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 6,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionEstate",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "expeditionCountry",
+							"label": "Departamento expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 7,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionCity",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "expeditionEstate",
+							"label": "Ciudad expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 8,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "companyName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Razón social",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 7,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "firstName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Primer nombre",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 7,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "secondName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Segundo nombre",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 8,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "firstSurname",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Primer apellido",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 9,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "secondSurname",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Segundo apellido",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 10,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthCountry",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "País nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 15,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthEstate",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "birthCountry",
+							"label": "Departamento nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 16,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthEstateName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Ciudad de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 17,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthCity",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "birthEstate",
+							"label": "Ciudad de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 18,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthdateDay",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Día de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 19,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthdateMonth",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Mes de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 20,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthdateYear",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Año de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 21,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "age",
+							"dataType": "number",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Edad",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 22,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "sex",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Sexo",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 23,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "typeAddress",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Tipo de dirección",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 19,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalAddress",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Dirección ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 20,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalAddressComplement",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Complemento dirección ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 21,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalCountry",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "País ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 22,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalEstate",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "postalCountry",
+							"label": "Departamento",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 23,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalEstateName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Ciudad de correspondencia",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 23,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalCity",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "postalEstate",
+							"label": "Ciudad ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 24,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "mobile",
+							"dataType": "number",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Teléfono celular",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 26,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "phone",
+							"dataType": "number",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Teléfono fijo",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 27,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "email",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Correo electrónico",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 28,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "emailConfirm",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Confirmación correo electrónico",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 29,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "contactMedia",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "¿Por qué medio desea ser contactado?",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 30,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "historicalCases",
+							"dataType": "tableSimple",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Histórico de casos",
+							"GROUP_order": 50,
+							"GROUP_label": "Otras denuncias",
+							"order": 100,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						}
+					],
+					"birthdate": "1997-06-03T05:00:00.000Z",
+					"expeditionDate": "2019-02-01T05:00:00.000Z"
+				}
+			],
+			"dataIndex": 0
+		}
+	},
+	"previousForm": {
+		"stepIndex": null,
+		"stepODM": null,
+		"operationIndex": null,
+		"filter": null,
+		"showCheckboxDialog": null,
+		"criminalNews": {
+			"sigturno": "",
+			"app": "SUIP",
+			"appProcess": "RECORD_COMPLAINT_CITIZEN",
+			"indexOfDenouncer": 0,
+			"navigatorVersion": "Chrome 91",
+			"_coprId": 79064882,
+			"classData": "CRIMINAL_NEWS_TEMP",
+			"_id": "754c444c29c0a049e1a536a7603cf62b",
+			"consecutive": 28,
+			"goods": [],
+			"crimes": [],
+			"steps": [
+				{
+					"fromStep": "0",
+					"destinationStep": 2,
+					"operationIndex": 1
+				},
+				{
+					"fromStep": "2",
+					"destinationStep": 5,
+					"operationIndex": 1
+				},
+				{
+					"fromStep": "5",
+					"destinationStep": 11,
+					"operationIndex": 1
+				},
+				{
+					"fromStep": "11",
+					"destinationStep": 7,
+					"operationIndex": 2
+				}
+			],
+			"factDetails": {
+				"receiverUser": {
+					"username": "RECEPTOR_VIRTUAL",
+					"firstName": "RECEPTOR",
+					"firstSurname": "CIUDADANO",
+					"secondSurname": "VIRTUAL",
+					"email": null,
+					"identity": "-1",
+					"spoaUsername": "RECEPTOR_VIRTUAL"
+				},
+				"receiverUnit": {
+					"company": {
+						"name": "Fiscalía General de la Nación",
+						"id": "60"
+					},
+					"branch": {
+						"name": "UNIDAD RECEPTORA VIRTUAL",
+						"id": "UNRE_ID_60_99999",
+						"parentId": "MUNI_ID_140_11_1"
+					},
+					"estate": {
+						"id": "DEPT_ID_140_11",
+						"name": "BOGOTÁ, D. C.",
+						"parentId": "PAIS_ID_140"
+					},
+					"city": {
+						"name": "BOGOTÁ, D.C.",
+						"id": "MUNI_ID_140_11_1",
+						"parentId": "DEPT_ID_140_11"
+					},
+					"country": {
+						"name": "Colombia",
+						"id": "PAIS_ID_140"
+					},
+					"spoaUsername": "RECEPTOR_VIRTUAL"
+				},
+				"consecutiveNumber": "",
+				"radNumber": "",
+				"typeOfCriminalNews": "CREATE_NEWC_PUBLIC",
+				"hasABC": false,
+				"index": [
+					{
+						"icon": "person",
+						"title": "Denunciante",
+						"step": 7,
+						"order": 200,
+						"isActual": true
+					}
+				],
+				"abcs": [
+					{
+						"jsonField": "help",
+						"dataType": "string",
+						"jsonObject": "factDetails",
+						"dependentJsonFeature": null,
+						"label": "Importante:",
+						"GROUP_order": 1,
+						"GROUP_label": "Lea cuidadosamente la siguiente información",
+						"order": 2,
+						"catalogId": "CITIZEN_HELP",
+						"step": 2
+					},
+					{
+						"jsonField": "warning",
+						"dataType": "string",
+						"jsonObject": "factDetails",
+						"dependentJsonFeature": null,
+						"label": "Advertencia",
+						"GROUP_order": 1,
+						"GROUP_label": "Advertencia",
+						"order": 1,
+						"catalogId": "CITIZEN_WARNING",
+						"step": 5
+					},
+					{
+						"jsonField": "identityType",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Tipo de documento",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 1,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "identity",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Número de documento",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 2,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionDateDay",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Día de expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 3,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionDateMonth",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Mes de expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 4,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionDateYear",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Año de expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 5,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionCountry",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "País expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 6,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionEstate",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "expeditionCountry",
+						"label": "Departamento expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 7,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "expeditionCity",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "expeditionEstate",
+						"label": "Ciudad expedición",
+						"GROUP_order": 2,
+						"GROUP_label": "Documento de identificación",
+						"order": 8,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "companyName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Razón social",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 7,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "firstName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Primer nombre",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 7,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "secondName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Segundo nombre",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 8,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "firstSurname",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Primer apellido",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 9,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "secondSurname",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Segundo apellido",
+						"GROUP_order": 3,
+						"GROUP_label": "Nombres",
+						"order": 10,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthCountry",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "País nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 15,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthEstate",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "birthCountry",
+						"label": "Departamento nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 16,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthEstateName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Ciudad de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 17,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthCity",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "birthEstate",
+						"label": "Ciudad de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 18,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthdateDay",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Día de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 19,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthdateMonth",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Mes de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 20,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "birthdateYear",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Año de nacimiento",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 21,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "age",
+						"dataType": "number",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Edad",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 22,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "sex",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Sexo",
+						"GROUP_order": 4,
+						"GROUP_label": "Información personal",
+						"order": 23,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "typeAddress",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Tipo de dirección",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 19,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalAddress",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Dirección ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 20,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalAddressComplement",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Complemento dirección ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 21,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalCountry",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "País ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 22,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalEstate",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "postalCountry",
+						"label": "Departamento",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 23,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalEstateName",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Ciudad de correspondencia",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 23,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "postalCity",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": "postalEstate",
+						"label": "Ciudad ",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 24,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "mobile",
+						"dataType": "number",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Teléfono celular",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 26,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "phone",
+						"dataType": "number",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Teléfono fijo",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 27,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "email",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Correo electrónico",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 28,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "emailConfirm",
+						"dataType": "string",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Confirmación correo electrónico",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 29,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "contactMedia",
+						"dataType": "list",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "¿Por qué medio desea ser contactado?",
+						"GROUP_order": 7,
+						"GROUP_label": "Datos de contacto",
+						"order": 30,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					},
+					{
+						"jsonField": "historicalCases",
+						"dataType": "tableSimple",
+						"jsonObject": "persons",
+						"dependentJsonFeature": null,
+						"label": "Histórico de casos",
+						"GROUP_order": 50,
+						"GROUP_label": "Otras denuncias",
+						"order": 100,
+						"catalogId": "PersonTypeCA20",
+						"step": 11
+					}
+				],
+				"initialDate": "",
+				"finalDate": "",
+				"abcTypeValue": [],
+				"recCitViolenceKind": [],
+				"kindRelationship": [],
+				"idCase": 1623806086812,
+				"idReference": "CIUDADANO",
+				"hasRegistryError": true,
+				"hasDateError": false,
+				"hasDateBirthdateError": false
+			},
+			"relationships": [],
+			"personType": "PersonTypeCA20",
+			"persons": [
+				{
+					"intervenerType": {
+						"id": "PersonTypeCA20",
+						"name": "DENUNCIANTE"
+					},
+					"disabilities": [],
+					"personId": "PERSON_0",
+					"abc": [],
+					"identityType": {
+						"name": "CEDULA DE CIUDADANIA",
+						"id": "DocumentTypes8",
+						"parentid": null,
+						"deep": 1,
+						"listName": "DocumentTypesCitizen1"
+					},
+					"identity": "234234324",
+					"expeditionDateDay": {
+						"name": "1",
+						"id": "1",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Days"
+					},
+					"expeditionDateMonth": {
+						"name": "Febrero",
+						"id": "2",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Months"
+					},
+					"expeditionDateYear": {
+						"name": "2019",
+						"id": "2019",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Years"
+					},
+					"expeditionCountry": {
+						"name": "COLOMBIA",
+						"id": "PAIS_ID_140",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Location"
+					},
+					"expeditionEstate": {
+						"name": "BOGOTÁ, D. C.",
+						"id": "DEPT_ID_140_11",
+						"parentid": "PAIS_ID_140",
+						"deep": 2,
+						"listName": "Location"
+					},
+					"expeditionCity": {
+						"name": "BOGOTÁ, D.C.",
+						"id": "MUNI_ID_140_11_1",
+						"parentid": "DEPT_ID_140_11",
+						"deep": 3,
+						"listName": "Location"
+					},
+					"companyName": null,
+					"firstName": "LANDO",
+					"secondName": "LANDA",
+					"firstSurname": "CARRISIAN",
+					"secondSurname": "RESTREPO",
+					"birthCountry": {
+						"name": "COLOMBIA",
+						"id": "PAIS_ID_140",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Location"
+					},
+					"birthEstate": {
+						"name": "AMAZONAS",
+						"id": "DEPT_ID_140_91",
+						"parentid": "PAIS_ID_140",
+						"deep": 2,
+						"listName": "Location"
+					},
+					"birthEstateName": null,
+					"birthCity": {
+						"name": "EL ENCANTO",
+						"id": "MUNI_ID_140_91_263",
+						"parentid": "DEPT_ID_140_91",
+						"deep": 3,
+						"listName": "Location"
+					},
+					"birthdateDay": {
+						"name": "3",
+						"id": "3",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Days"
+					},
+					"birthdateMonth": {
+						"name": "Junio",
+						"id": "6",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Months"
+					},
+					"birthdateYear": {
+						"name": "1997",
+						"id": "1997",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Years"
+					},
+					"age": 24,
+					"sex": {
+						"name": "HOMBRE",
+						"id": "SexM",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Sex"
+					},
+					"typeAddress": {
+						"name": "Laboral",
+						"id": "L",
+						"parentid": null,
+						"deep": 1,
+						"listName": "TypeLocationList"
+					},
+					"postalAddress": "ASDASDASDAS",
+					"postalAddressComplement": "TORRE 1",
+					"postalCountry": {
+						"name": "COLOMBIA",
+						"id": "PAIS_ID_140",
+						"parentid": null,
+						"deep": 1,
+						"listName": "Location"
+					},
+					"postalEstate": {
+						"name": "BOGOTÁ, D. C.",
+						"id": "DEPT_ID_140_11",
+						"parentid": "PAIS_ID_140",
+						"deep": 2,
+						"listName": "Location"
+					},
+					"postalEstateName": null,
+					"postalCity": {
+						"name": "BOGOTÁ, D.C.",
+						"id": "MUNI_ID_140_11_1",
+						"parentid": "DEPT_ID_140_11",
+						"deep": 3,
+						"listName": "Location"
+					},
+					"mobile": "324234234324",
+					"phone": "43434",
+					"email": "PRUEBA@GMAIL.COM",
+					"emailConfirm": "PRUEBA@GMAIL.COM",
+					"contactMedia": {
+						"name": "Correo electrónico",
+						"id": "ContactMedia2",
+						"parentid": null,
+						"deep": 1,
+						"listName": "ContactMedia"
+					},
+					"historicalCases": null,
+					"abcs": [
+						{
+							"jsonField": "identityType",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Tipo de documento",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 1,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "identity",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Número de documento",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 2,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionDateDay",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Día de expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 3,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionDateMonth",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Mes de expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 4,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionDateYear",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Año de expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 5,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionCountry",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "País expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 6,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionEstate",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "expeditionCountry",
+							"label": "Departamento expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 7,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "expeditionCity",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "expeditionEstate",
+							"label": "Ciudad expedición",
+							"GROUP_order": 2,
+							"GROUP_label": "Documento de identificación",
+							"order": 8,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "companyName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Razón social",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 7,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "firstName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Primer nombre",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 7,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "secondName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Segundo nombre",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 8,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "firstSurname",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Primer apellido",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 9,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "secondSurname",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Segundo apellido",
+							"GROUP_order": 3,
+							"GROUP_label": "Nombres",
+							"order": 10,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthCountry",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "País nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 15,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthEstate",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "birthCountry",
+							"label": "Departamento nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 16,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthEstateName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Ciudad de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 17,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthCity",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "birthEstate",
+							"label": "Ciudad de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 18,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthdateDay",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Día de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 19,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthdateMonth",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Mes de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 20,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "birthdateYear",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Año de nacimiento",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 21,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "age",
+							"dataType": "number",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Edad",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 22,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "sex",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Sexo",
+							"GROUP_order": 4,
+							"GROUP_label": "Información personal",
+							"order": 23,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "typeAddress",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Tipo de dirección",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 19,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalAddress",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Dirección ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 20,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalAddressComplement",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Complemento dirección ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 21,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalCountry",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "País ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 22,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalEstate",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "postalCountry",
+							"label": "Departamento",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 23,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalEstateName",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Ciudad de correspondencia",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 23,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "postalCity",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": "postalEstate",
+							"label": "Ciudad ",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 24,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "mobile",
+							"dataType": "number",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Teléfono celular",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 26,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "phone",
+							"dataType": "number",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Teléfono fijo",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 27,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "email",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Correo electrónico",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 28,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "emailConfirm",
+							"dataType": "string",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Confirmación correo electrónico",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 29,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "contactMedia",
+							"dataType": "list",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "¿Por qué medio desea ser contactado?",
+							"GROUP_order": 7,
+							"GROUP_label": "Datos de contacto",
+							"order": 30,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						},
+						{
+							"jsonField": "historicalCases",
+							"dataType": "tableSimple",
+							"jsonObject": "persons",
+							"dependentJsonFeature": null,
+							"label": "Histórico de casos",
+							"GROUP_order": 50,
+							"GROUP_label": "Otras denuncias",
+							"order": 100,
+							"catalogId": "PersonTypeCA20",
+							"step": 11
+						}
+					],
+					"birthdate": "1997-06-03T05:00:00.000Z",
+					"expeditionDate": "2019-02-01T05:00:00.000Z"
+				}
+			],
+			"dataIndex": 0
+		}
+	},
+	"validAnswer": true
+}

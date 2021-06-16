@@ -71,7 +71,7 @@
           Paso Anterior
         </button>
       </NuxtLink> -->
-      <NuxtLink to="/id/document">
+      <NuxtLink to="/id/user">
         <button class="btn-blue">
           Siguiente Paso
           <font-awesome-icon
